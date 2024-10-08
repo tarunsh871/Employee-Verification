@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Verification </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="page-header">
+        <h1>Squad Systems Pvt Ltd.</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="verification-container">
+            <h2>Employee Verification</h2>
+
+            <!-- Employee Image with Status Overlay -->
+            <div class="image-container">
+                <img src="employee.png" alt="Employee Image" id="employee-photo">
+                <span id="status-text" class="status-overlay"></span>
+            </div>
+
+            <!-- Employee Information Form -->
+            <div class="verification-form">
+                <form action="#">
+                    <label for="employee-id">Employee ID:</label>
+                    <input type="text" id="employee-id" name="employee-id" required>
+
+                    <label for="employee-name">Employee Name:</label>
+                    <input type="text" id="employee-name" name="employee-name" required>
+
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" required>
+
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" name="designation" required>
+
+                    <!-- Status Toggle (Buttons) placed below Designation -->
+                    <label for="status">Status:</label>
+                    <div class="status-toggle">
+                        <button type="button" id="active-btn" class="status-btn active" onclick="setStatus('active')">ACTIVE</button>
+                        <button type="button" id="inactive-btn" class="status-btn inactive" onclick="setStatus('inactive')">INACTIVE</button>
+                    </div>
+
+                   
+                    <button type="submit">Verify</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <p>&copy; 2024 Squad Systems. All rights reserved.</p>
+        <p>Designed by Squad Systems Pvt Ltd.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
